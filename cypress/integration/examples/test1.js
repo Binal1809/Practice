@@ -20,7 +20,7 @@ describe('my first test', function()
                 cy.get('.products').find('.product').should('have.length',4)
                 //cy.get('nth:child(3) > .product-action > button').click()
                 cy.get('.products').find('.product').eq(2).contains('ADD TO CART').click()
-                // code to add specific product passed from test data
+                
                 
 
                 
