@@ -34,6 +34,7 @@ describe('calender', function()
 
                 cy.get('.react-date-picker__inputGroup__input').each(($e1,index,$list1) =>
                 {
+                    // wrap is required to resolve promise as invoke require promise resolution 
                     // retrived value attribute value and verified against list via index of each function
                         cy.wrap($e1).invoke('val').should('eq',expectedList[index])
                 })
