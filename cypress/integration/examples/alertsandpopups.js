@@ -17,6 +17,7 @@ describe('basics on different type of webelements', function()
                // on is the methos which is used to trigger an event through cypress
                cy.on('window:alert', (str) =>
                {
+                //Mocha Sertion is expect and it has to and equl chaining functions
                     expect(str).to.equal('Hello , share this practice page and share your knowledge')
                })
                cy.on('window:confirm', (str) =>
